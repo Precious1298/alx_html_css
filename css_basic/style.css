@@ -1,21 +1,164 @@
+/* Body background and font */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff9900; /* Bright color for navigation links */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo styling in the nav */
+.logo {
+    font-size: 2rem; /* Make the logo larger */
+    color: #ff9900; /* Set a bright color for the logo */
+}
+
+/* Introduction Section */
+section#introduction {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Projects section styling */
+#projects h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.project {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #0073e6;
+}
+
+.project a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* About Me section */
+#about {
+    background-color: #e9f5ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Flexbox Layout Styling */
+main {
+    display: flex;
+    flex-direction: row; /* Article and aside side by side */
+    flex: auto;
+}
+
+/* Article styling */
+article {
+    flex: 2; /* 2/3 of the space */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto; /* Allows vertical scrolling if needed */
+}
+
+/* Aside styling */
+aside {
+    flex: 1; /* 1/3 of the space */
+    background-color: #f1f1f1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    overflow-y: auto; /* Allows vertical scrolling if needed */
+}
+
+/* Ensure body layout remains in a column with header, main, and footer */
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
+
 main {
-display: flex;
-flex-direction: row;
-flex: auto;
+    flex: auto;
 }
-article {
-    flex: 2;
-    overflow-y: auto;
+
+/* Keep header and footer in place */
+header {
+    background-color: #333;
+    color: white;
 }
-aside {
-    flex: 1;
-    overflow-y: auto;
-}
-article, aside {
-    overflow-y: auto;
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
 }
