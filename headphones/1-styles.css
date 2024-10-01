@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('fonts/source-sans-pro\ /SourcesansPro-Bold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('fonts/source-sans-pro\ /SourcesansPro-light.otf');
+}
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('fonts/source-sans-pro\ /SourcesansPro-semibold.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('fonts/source-sans-pro\ /Sourcesanspro-Regular.otf');
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source-sans-pro';
+}
+body {
+    color: black;
+    height: 70vh;
+    
+}
+
+/* nav starts */
+header {
+        background: url('images/headphones_hero_1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Source Sans Pro', sans-serif;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        gap: 35vh;
+    }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 80vw;
+}
+.menu-icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav :hover{
+    color: #FF6565;
+}
+
+.logo-image {
+    width: 150px;
+    margin-left: 65px;
+}
+/* nav ends */
+
+/* hero header section starts */
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+.hero-header p {
+    text-align: center;
+    width: 637px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header-title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.header-title h2 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: center;
+}
+
+button {
+    color: #fff;
+    background-color: #ff6565;
+    border-radius: 24px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+/* hero section ends */
+
+/* about us section starts */
+.about-us {
+    font-family: 'source-sans-pro'; 
+}
+.about {
+    padding: 50px 50px;
+    align-items: center;
+    color: #071629;
+}
+.about h2 {
+    text-align: center;
+    padding: 50px 10px;
+    font-size: 30px;
+}
+.about p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 2px 2px;
+}
+.icons {
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+    
+}
+.smile img {
+    width: 30%;
+}
+
+.smile {
+   line-height: 26px;
+    text-align: center;
+    align-items: center;
+}
+.smile h3 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+.smile p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+/* about us section ends */
+
+
+
+/* tab version */
+/*####TABLET######*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+
+    /* HEADER SECTION */
+    header {
+        height: 80vh;
+        gap: 30vh;
+    }
+    
+    nav {
+        margin-top: 29px;
+        width: 85vw;
+    }
+
+    nav ul {
+        gap: 35px;
+    }
+
+    .header-title h1 {
+        line-height: 40.22px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+    /* header section ends */
+
+    /* main section */
+    .about-us {
+        height: 70vh;
+        margin-top: 6px;
+    }
+
+    .icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+    }
+    /* about section */
+}
+
+
+
+/*###MOBILE###*/
+/*###MOBILE###*/
+@media screen and (max-width: 480px) {
+    /* HEADER SECTION */
+    header {
+        background-position: 50%;
+        height: 100vh;
+        gap: 30vh;
+    }
+    nav {
+        margin-top: 29px;
+        width: 85vw;
+        justify-content: flex-start;
+        gap: 66px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        
+    }
+    nav .menu-icon {
+        display: block;
+    }
+    nav .logo-image {
+        width: 150px;
+    }
+
+    .hero-header p {
+        line-height: 26px;
+        font-size: 12px;
+        margin-top: 50px;
+        width: 335px;
+    }
+
+
+    button {
+        color: #fff;
+        background-color: #ff6565;
+        border-radius: 24px;
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    button:hover, button:active {
+        opacity: 0.9;
+    }
+     /* main section */
+    .about-us {
+        gap: 25px;
+        margin-top: 60px;
+        
+    }
+
+    .about {
+        width: 90vw;
+    }
+    
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
