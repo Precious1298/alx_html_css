@@ -196,42 +196,46 @@ font-size: 12px;
     line-height: 26px;
     
 }
+
+/* PENTAGON */
 .images {
-    padding: 50px 45px;
-    gap: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
-.pentagone {
+.pentagon {
     position: relative;
-    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #ff6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-.pentagone img {
-    width: 70%;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.pentagone h5 {
+.pentagon-text {
     position: absolute;
-    top: 30%;
-    left: 30%;
     text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.percentage {
     font-size: 46px;
-    font-weight: bolder;
-   
+    font-weight: bold;
 }
 
-.pentagone p {
-    position: absolute;
-    top: 65%;
-    padding: 2px 2px 20px;
-    left: 24%;
-    text-align: center;
+.lorem-text {
     font-size: 14px;
-    font-weight: lighter;
-
+    margin-top: 5px;
 }
+
 /* results section ends */
 
 /* contact section */
@@ -456,7 +460,6 @@ footer {
     /* contact section */
     form {
         height: 100vh;
-        padding:  20px;
     }
 
     /* footer */
@@ -469,3 +472,12 @@ footer {
         gap: 45px;
     }
 }
+
+
+
+
+
+
+
+
+
